@@ -2,7 +2,7 @@
 const session = JSON.parse(localStorage.getItem("session"));
 
 if (!session || session.user !== "admin@farmvaidya.ai") {
-  window.location.href = "login.html";
+  window.location.href = "login_new.html";
 }
 // DOM Elements
 const form = document.getElementById("benchmarkForm");
