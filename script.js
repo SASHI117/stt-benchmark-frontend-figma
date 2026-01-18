@@ -1,5 +1,7 @@
 // 🔐 AUTH GUARD (ADD THIS AT TOP)
-if (localStorage.getItem("isLoggedIn") !== "true") {
+const session = JSON.parse(localStorage.getItem("session"));
+
+if (!session || session.user !== "admin@farmvaidya.ai") {
   window.location.href = "login.html";
 }
 // DOM Elements
